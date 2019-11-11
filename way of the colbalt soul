@@ -44,8 +44,8 @@ AddSubClass("monk", "Colbalt Soul", {
                 "and 17th level. If you already have proficiency in one of the listed skills at 11th or 17th level,",
                 "you can instead choose to double your proficiency bonus for any ability check you make that",
                 "uses the chosen proficiency."
-			]),
-		},
+        ]),
+   },
 		"subclassfeature3": {
 			name: "Extract Aspects",
 			source: ["wikidot", 1],
@@ -58,11 +58,11 @@ AddSubClass("monk", "Colbalt Soul", {
                 "you must finish a short or long rest before you can use it again.",
                 "Upon reaching 6th level, you can use this feature twice between rests, and beginning at 17th level,",
                 "you can use it three times between rests. When you finish a short or long rest, you regain your expended uses."
-            ]),
+         ]),
             recovery: "short rest",
             action : ["action", ""]
-        },
-        "subclassfeature6": {
+   },
+      	        "subclassfeature6": {
 			name: "Extort Truth",
 			source: ["wikidot", 1],
 			minlevel: 6,
@@ -76,9 +76,9 @@ AddSubClass("monk", "Colbalt Soul", {
                 "on their saving throw."
                 "An affected creature is aware of the effect and can thus avoid answering questions to which it would ",
                 "normally espond with a lie. Such a creature can be evasive in its answers as long as the effect lasts."
-            ]),
+         ]),
 
-		},
+   },
 		"subclassfeature6": {
 			name: "Preternatural Counter",
 			source: ["wikidot", 1],
@@ -87,7 +87,7 @@ AddSubClass("monk", "Colbalt Soul", {
                 "Beginning at 6th level, your quick mind and study of your foe allows you to use their failure to",
                 "your advantage. If a creature misses you with an attack, you can immediately use your reaction",
                 "to make a melee attack against that creature."
-     	]),
+     	 ]),
 
     },
 		"subclassfeature11": {
@@ -101,7 +101,7 @@ AddSubClass("monk", "Colbalt Soul", {
                 "You can only use one reaction per trigger.",
                 "In addition, whenever you make an Intelligence (Investigation) check, you can spend 1 ki point",
                 "to gain advantage on the roll."
-          	]),
+         ]),
 
     },
 		"subclassfeature17": {
