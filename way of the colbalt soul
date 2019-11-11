@@ -1,0 +1,132 @@
+/*	-WHAT IS THIS?-
+	This file adds optional material to "MPMB's Character Record Sheet" found at https://flapkan.com/mpmb/charsheets
+	Import this file using the "Add Extra Materials" bookmark.
+	-KEEP IN MIND-
+	It is recommended to enter the code in a fresh sheet before adding any other information (i.e. before making your character with it).
+*/
+
+/*	-INFORMATION-
+	Subject:	Subclass
+	Effect:		This script adds a subclass for the Monk, called "Way of the Colbalt Soul"
+				This subclass has been made by wikidot
+				This code uses the subclass from dnd5e.wikidot.com
+	Code by:	rain
+	Date:		2019-11-11 (sheet v12.999)
+*/
+
+var iFileName = "Monk - Way of the Colbalt Soul [wikidot's work, transcribed by rain].js";
+RequiredSheetVersion(12.999);
+
+SourceList["wikidot"] = {
+	name: "SpiketailDrake: Way of the Colbalt Soul (v2.2)",
+	abbreviation: "wikidot",
+	group: "wikidot",
+	url: "http://dnd5e.wikidot.com/monk:cobalt-soul",
+	date : "2019/11/11" //creation date unknown 
+};
+
+AddSubClass("monk", "Colbalt Soul", {
+	regExpSearch: /Colbalt Soul/i,
+	subname: "Way of the Colbalt Soul",
+	fullname: "Monk: Way of the Colbalt Soul",
+	source: ["wikidot", 1],
+	features: {
+		"subclassfeature3": {
+			name: "Soul Knife",
+			source: ["wikidot", 1],
+			minlevel: 3,
+            description: desc([
+            "Unarmed strikes deal your choice: psychic, piercing, slashing, or bludgeoning. As a bonus",
+            "action, you increase the reach of unarmed attacks by 30' until the end of your next turn."
+            ]),
+            action : ["bonus action", ""]
+		},
+		"subclassfeature3.1": {
+			name: "Mystical Erudition",
+			source: ["wikidot", 1],
+			minlevel: 3,
+			description: desc([
+                "Upon choosing this tradition at 3rd level, you’ve undergone extensive training with the Cobalt",
+                "Soul, teaching you extensively in history or lore from the monastery’s collected volumes.",
+                "You learn one language of your choice, and you choose one skill from the following list",
+                "to gain proficiency in: Arcana, History, Nature, and Religion.",
+                "You gain an additional language and an additional skill proficiency from the above list at 11th",
+                "and 17th level. If you already have proficiency in one of the listed skills at 11th or 17th level,",
+                "you can instead choose to double your proficiency bonus for any ability check you make that",
+                "uses the chosen proficiency."
+			])
+		},
+		"subclassfeature3": {
+			name: "Extract Aspects",
+			source: ["wikidot", 1],
+			minlevel: 3,
+			description: desc([
+                "Beginning at 3rd level when choosing this tradition, you can strike multiple pressure points",
+                "o extract crucial information about your foe. Whenever you hit a single creature with one",
+                "of the attacks granted by your Flurry of Blows, you learn the creature's Damage Vulnerabilities,",
+                "Damage Resistances, Damage Immunities, and Condition Immunities. Once you use this feature,",
+                "you must finish a short or long rest before you can use it again.",
+                "Upon reaching 6th level, you can use this feature twice between rests, and beginning at 17th level,",
+                "you can use it three times between rests. When you finish a short or long rest, you regain your expended uses."
+            ]),
+            recovery: "short rest",
+            action : ["action", ""]
+        },
+        "subclassfeature6": {
+			name: "Extort Truth",
+			source: ["wikidot", 1],
+			minlevel: 6,
+			description: desc([
+                "At 6th level, you can hit a series of hidden nerves on a creature with precision, temporarily",
+                "causing them to be unable to mask their true thoughts and intent. If you manage to hit a single",
+                "creature with two or more attacks in one round, you can spend 1 ki point to force them to make",
+                "a Charisma saving throw.You can choose to have these attacks deal no damage. On a failed save,",
+                "the creature is unable to speak a deliberate lie for 1 minute and all Charisma checks directed",
+                "at the creature are made with advantage for the duration. You know if they succeeded or failed",
+                "on their saving throw."
+                "An affected creature is aware of the effect and can thus avoid answering questions to which it would ",
+                "normally espond with a lie. Such a creature can be evasive in its answers as long as the effect lasts."
+            ]),
+
+		},
+		"subclassfeature6": {
+			name: "Preternatural Counter",
+			source: ["wikidot", 1],
+			minlevel: 6,
+			description: desc([
+                "Beginning at 6th level, your quick mind and study of your foe allows you to use their failure to",
+                "your advantage. If a creature misses you with an attack, you can immediately use your reaction",
+                "to make a melee attack against that creature."
+     	]),
+
+    },
+		"subclassfeature11": {
+			name: "Mind of Mercury",
+			source: ["wikidot", 1],
+			minlevel: 11,
+			description: desc([
+                "Starting at 11th level, you’ve honed your awareness and reflexes through mental aptitude and",
+                "pattern recognition. You can take a number of additional reactions each round equal to your",
+                "Intelligence modifier (minimum of 1), at the cost of 1 ki point per reaction beyond the first.",
+                "You can only use one reaction per trigger.",
+                "In addition, whenever you make an Intelligence (Investigation) check, you can spend 1 ki point",
+                "to gain advantage on the roll."
+          	]),
+
+    },
+		"subclassfeature17": {
+			name: "Debilitating Barrage",
+			source: ["wikidot", 1],
+			minlevel: 17,
+			description: desc([
+                "Upon reaching 17th level, you’ve gained the knowledge to temporarily lower a creature’s fortitude",
+                "by striking a series of pressure points. Whenever you hit a single creature with three or more attacks in",
+                "one round, you can spend 3 ki points to cause the creature to suffer a vulnerability to a damage type",
+                "of your choice for 1 minute, or until after they take any damage of that type.",
+                "Creatures with resistance or immunity to the chosen damage type do not suffer vulnerability. Instead, their",
+                "resistance to the chosen damage type is lost for the duration, or their immunity is reduced to resistance",
+                "for the duration."
+     	   ]),
+		},
+	}
+});
