@@ -32,16 +32,6 @@ AddSubClass("monk", "Colbalt Soul", {
 	source: ["wikidot", 1],
 	features: {
 		"subclassfeature3": {
-			name: "Soul Knife",
-			source: ["wikidot", 1],
-			minlevel: 3,
-            description: desc([
-            "Unarmed strikes deal your choice: psychic, piercing, slashing, or bludgeoning. As a bonus",
-            "action, you increase the reach of unarmed attacks by 30' until the end of your next turn."
-            ]),
-            action : ["bonus action", ""]
-		},
-		"subclassfeature3.1": {
 			name: "Mystical Erudition",
 			source: ["wikidot", 1],
 			minlevel: 3,
@@ -54,7 +44,7 @@ AddSubClass("monk", "Colbalt Soul", {
                 "and 17th level. If you already have proficiency in one of the listed skills at 11th or 17th level,",
                 "you can instead choose to double your proficiency bonus for any ability check you make that",
                 "uses the chosen proficiency."
-			])
+			]),
 		},
 		"subclassfeature3": {
 			name: "Extract Aspects",
