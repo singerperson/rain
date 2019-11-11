@@ -31,7 +31,7 @@ AddSubClass("monk", "Colbalt Soul", {
 	fullname: "Monk: Way of the Colbalt Soul",
 	source: ["wikidot", 1],
 	features: {
-		"subclassfeature3": {
+		"subclassfeature1": {
 			name: "Mystical Erudition",
 			source: ["wikidot", 1],
 			minlevel: 3,
@@ -46,7 +46,7 @@ AddSubClass("monk", "Colbalt Soul", {
                 "uses the chosen proficiency."
         ]),
    },
-		"subclassfeature3": {
+		"subclassfeature2": {
 			name: "Extract Aspects",
 			source: ["wikidot", 1],
 			minlevel: 3,
@@ -62,7 +62,7 @@ AddSubClass("monk", "Colbalt Soul", {
             recovery: "short rest",
             action : ["action", ""]
    },
-      	        "subclassfeature6": {
+      	        "subclassfeature3": {
 			name: "Extort Truth",
 			source: ["wikidot", 1],
 			minlevel: 6,
@@ -73,13 +73,13 @@ AddSubClass("monk", "Colbalt Soul", {
                 "a Charisma saving throw.You can choose to have these attacks deal no damage. On a failed save,",
                 "the creature is unable to speak a deliberate lie for 1 minute and all Charisma checks directed",
                 "at the creature are made with advantage for the duration. You know if they succeeded or failed",
-                "on their saving throw."
+                "on their saving throw.",
                 "An affected creature is aware of the effect and can thus avoid answering questions to which it would ",
                 "normally espond with a lie. Such a creature can be evasive in its answers as long as the effect lasts."
          ]),
 
    },
-		"subclassfeature6": {
+		"subclassfeature4": {
 			name: "Preternatural Counter",
 			source: ["wikidot", 1],
 			minlevel: 6,
